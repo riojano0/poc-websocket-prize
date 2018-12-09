@@ -7,5 +7,6 @@ import lombok.*;
 public class Prize {
 
     private String name;
+    private String description;
 
 }

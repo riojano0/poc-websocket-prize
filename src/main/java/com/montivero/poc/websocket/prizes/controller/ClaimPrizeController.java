@@ -20,4 +20,10 @@ public class ClaimPrizeController {
         return winnerList;
     }
 
+    @MessageMapping("/init-winner")
+    @SendTo("/winner-list")
+    public List<Winner> currentWinners() {
+        return winnerList;
+    }
+
 }
